@@ -12,3 +12,6 @@ In this project I have used the following :
 +  CSS - Grid/Flex
 +  JavaScript
 +  Media-Query
+
+
+live site - https://gira1992.github.io/to-do-app/
