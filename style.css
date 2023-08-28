@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: hsl(0, 0%, 98%);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.input-container{
+    width: 100%;
+    position: relative;
+}
+
+.input-container button{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    margin: auto 10px auto 10px;
+}
+
+
+
+input[type='text']{
+    margin: 1rem 0;
+    height:3rem;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    padding-left: 54px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+#checkbox{
+    display: none;
+}
+
+.header label{
+    cursor: pointer;
+}
+
+#sun{
+    display: none;
+}
+
+
+
+
+.banner {
+    height: 35%;
+    width: 100%;
+    background-image: url("./images/bg-desktop-light.jpg");
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container{
+    display: grid;
+    z-index: 99;
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    max-width: 1200px;
+}
+
+@media only screen and (max-width:1100px)  {
+     .container{
+        width: 60%;
+     }   
+}
+
+@media only screen and (max-width: 650px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container{
+        width: 90%;
+    }    
+}
+
+main{
+    box-shadow: 13px 20px 20px -17px ;
+}
+
+
+.added{
+    background-color: hsl(0, 0%, 98%);
+    height: 3rem;
+    border-top: 1px solid hsl(236, 9%, 61%);
+    padding: 15px 8px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(235, 19%, 35%);
+}
+
+.list :checked + span{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.list label span{
+    margin-left: 10px;
+}
+
+.added:hover{
+    background-color: hsl(236, 33%, 92%);
+    cursor: pointer;
+}
+
+.close{
+    padding-right: 10px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    color: hsl(236, 9%, 61%);
+    border-top: 1px solid hsl(236, 9%, 61%);
+    height: 3rem;
+}
+
+.complete{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
